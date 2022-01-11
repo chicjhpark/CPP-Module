@@ -6,7 +6,7 @@
 /*   By: jaehpark <jaehpark@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 11:26:03 by jaehpark          #+#    #+#             */
-/*   Updated: 2022/01/11 13:34:51 by jaehpark         ###   ########.fr       */
+/*   Updated: 2022/01/11 14:47:26 by jaehpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,11 @@
 
 int	main(int argc, char **argv)
 {
-	int	i;
-	int	j;
-
-	if (!argv[1])
+	if (argc < 2)
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
-	i = 0;
-	while (argv[++i])
+	for (int i = 1; argv[i]; i++)
 	{
-		j = -1;
-		while (argv[i][++j])
+		for (int j = 0; argv[i][j]; j++)
 			std::cout << (char)toupper(argv[i][j]);
 		std::cout << " ";
 	}
