@@ -1,12 +1,23 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   phonebook.cpp                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jaehpark <jaehpark@student.42seoul.kr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/11 13:36:19 by jaehpark          #+#    #+#             */
-/*   Updated: 2022/01/11 13:40:01 by jaehpark         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include "phonebook.h"
 
+int	PhoneBook::num = 0;
+
+PhoneBook::PhoneBook(void)
+{
+	idx = 0;
+}
+
+void	PhoneBook::AddContact(void)
+{
+
+}
+
+void	PhoneBook::DisplayAllContacts(void)
+{
+
+}
+
+void	PhoneBook::DisplayOneContact(void)
+{
+
+}

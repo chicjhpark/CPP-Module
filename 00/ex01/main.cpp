@@ -1,14 +1,26 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jaehpark <jaehpark@student.42seoul.kr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/11 14:41:07 by jaehpark          #+#    #+#             */
-/*   Updated: 2022/01/11 14:48:01 by jaehpark         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include "phonebook.h"
 
-#include "PhoneBook.hpp"
+int	main(void)
+{
+	std::string	input;
+	PhoneBook	PhoneBook;
 
+	while (true)
+	{
+		std::cout << "MENU : ADD, SEARCH, EXIT" << std::endl;
+		std::cout << "Input : ";
+		std::cin >> input;
+		if (input == "ADD")
+			PhoneBook.AddContact();
+		else if (input == "SEARCH")
+		{
+
+		}
+		else if (input == "EXIT" || input == "")
+			break ;
+		else
+			std::cout << "WRONG COMMAND!" << std::endl;
+		system("leaks phonebook");
+	}
+	return (0);
+}

@@ -1,21 +1,11 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: jaehpark <jaehpark@student.42seoul.kr>     +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/11 10:24:39 by jaehpark          #+#    #+#              #
-#    Updated: 2022/01/11 13:39:52 by jaehpark         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME			= phonebook
 
 CC				= clang++
 CFLAGS			= -Wall -Werror -Wextra -std=c++98
 
-SRCS			= phonebook.c
+SRCS			= main.cpp \
+					phonebook.cpp \
+					contact.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
