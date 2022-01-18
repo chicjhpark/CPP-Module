@@ -65,7 +65,7 @@ void	PhoneBook::DisplayOneContact(void)
 	if (std::cin.fail())
 		exit(1);
 	std::stringstream(input) >> idx;
-	if (atoi(input.c_str()) == 0 || idx < 0 || idx > 9)
+	if (input != "0" && (atoi(input.c_str()) == 0 || idx < 0 || idx > 9))
 		std::cout << "Error : Wrong input!" << std::endl;
 	else if (idx < 0 || idx > 8)
 		std::cout << "Error : Wrong index number!" << std::endl;
