@@ -7,20 +7,26 @@ int	main(void)
 
 	while (true)
 	{
-		std::cout << "MENU : ADD, SEARCH, EXIT" << std::endl;
+		std::cout << "________________________" << std::endl << std::endl;
+		std::cout << "COMMAND : ADD, SEARCH, EXIT" << std::endl;
+		std::cout << "________________________" << std::endl << std::endl;
 		std::cout << "Input : ";
 		std::cin >> input;
-		if (input == "ADD")
+		if (std::cin.fail())
+			exit (1);
+		else if (input == "EXIT")
+			break ;
+		else if (input == "ADD")
 			PhoneBook.AddContact();
 		else if (input == "SEARCH")
 		{
-
+			PhoneBook.DisplayAllContacts();
+			PhoneBook.DisplayOneContact();
 		}
-		else if (input == "EXIT" || input == "")
-			break ;
 		else
-			std::cout << "WRONG COMMAND!" << std::endl;
-		system("leaks phonebook");
+			std::cout << "Error : Wrong input!" << std::endl;
+		input = "";
+		//system("leaks phonebook");
 	}
 	return (0);
 }
