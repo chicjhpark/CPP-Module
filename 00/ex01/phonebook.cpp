@@ -23,7 +23,7 @@ void	PhoneBook::AddContact(void)
 	Contacts[idx].SetDarkestSecret(input);
 	std::cout << "Add contact complete." << std::endl;
 
-	idx = idx != 8 ? idx + 1 : 0;
+	idx = idx != 7 ? idx + 1 : 0;
 	num = num != 8 ? num + 1 : num;
 }
 
@@ -67,7 +67,7 @@ void	PhoneBook::DisplayOneContact(void)
 	std::stringstream(input) >> idx;
 	if (input != "0" && (atoi(input.c_str()) == 0 || idx < 0 || idx > 9))
 		std::cout << "Error : Wrong input!" << std::endl;
-	else if (idx < 0 || idx > 8)
+	else if (idx < 0 || idx > 7)
 		std::cout << "Error : Wrong index number!" << std::endl;
 	else if (idx >= num)
 		std::cout << "Error : Empty index!" << std::endl;
