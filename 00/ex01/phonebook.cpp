@@ -8,19 +8,19 @@ void	PhoneBook::AddContact(void)
 
 	std::cout << "Input first name : ";
 	std::cin >> input;
-	Contacts[idx].SetFirstName(input);
+	contacts[idx].SetFirstName(input);
 	std::cout << "Input last name : ";
 	std::cin >> input;
-	Contacts[idx].SetLastName(input);
+	contacts[idx].SetLastName(input);
 	std::cout << "Input nickname : ";
 	std::cin >> input;
-	Contacts[idx].SetNickname(input);
+	contacts[idx].SetNickname(input);
 	std::cout << "Input phone number : ";
 	std::cin >> input;
-	Contacts[idx].SetPhoneNumber(input);
+	contacts[idx].SetPhoneNumber(input);
 	std::cout << "Input darkest secret : ";
 	std::cin >> input;
-	Contacts[idx].SetDarkestSecret(input);
+	contacts[idx].SetDarkestSecret(input);
 	std::cout << "Add contact complete." << std::endl;
 
 	idx = idx != 7 ? idx + 1 : 0;
@@ -49,16 +49,16 @@ void	PhoneBook::DisplayAllContacts(void)
 	for (int i = 0; i < num; i++)
 	{
 		std::cout << "|" << std::setw(10) << i << "|";
-		DisplayContactForm(Contacts[i].GetFirstName(), false);
-		DisplayContactForm(Contacts[i].GetLastName(), false);
-		DisplayContactForm(Contacts[i].GetNickname(), true);
+		DisplayContactForm(contacts[i].GetFirstName(), false);
+		DisplayContactForm(contacts[i].GetLastName(), false);
+		DisplayContactForm(contacts[i].GetNickname(), true);
 	}
 }
 
 void	PhoneBook::DisplayOneContact(void)
 {
 	std::string	input;
-	int		idx;
+	int			idx;
 
 	std::cout << "Input contact index number : ";
 	std::cin >> input;
@@ -73,10 +73,10 @@ void	PhoneBook::DisplayOneContact(void)
 		std::cout << "Error : Empty index!" << std::endl;
 	else
 	{
-		std::cout << "First name : " << Contacts[idx].GetFirstName() << std::endl;
-		std::cout << "Last name : " << Contacts[idx].GetLastName() << std::endl;
-		std::cout << "Nick name : " << Contacts[idx].GetNickname() << std::endl;
-		std::cout << "Phone number : " << Contacts[idx].GetPhoneNumber() << std::endl;
-		std::cout << "Darkest secret : " << Contacts[idx].GetDarkestSecret() << std::endl;
+		std::cout << "First name : " << contacts[idx].GetFirstName() << std::endl;
+		std::cout << "Last name : " << contacts[idx].GetLastName() << std::endl;
+		std::cout << "Nick name : " << contacts[idx].GetNickname() << std::endl;
+		std::cout << "Phone number : " << contacts[idx].GetPhoneNumber() << std::endl;
+		std::cout << "Darkest secret : " << contacts[idx].GetDarkestSecret() << std::endl;
 	}
 }
