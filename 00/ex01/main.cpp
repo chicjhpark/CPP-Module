@@ -26,7 +26,6 @@ int	main(void)
 		else
 			std::cout << "Error : Wrong input!" << std::endl;
 		input = "";
-		//system("leaks phonebook");
 	}
 	return (0);
 }
