@@ -12,7 +12,7 @@ class PhoneBook
 		{
 			SIZE = 8
 		};
-		Contact		Contacts[SIZE];
+		Contact		contacts[SIZE];
 		int			num;
 		int			idx;
 	public:

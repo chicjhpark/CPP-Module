@@ -3,7 +3,7 @@
 int	main(void)
 {
 	std::string	input;
-	PhoneBook	PhoneBook;
+	PhoneBook	phoneBook;
 
 	while (true)
 	{
@@ -17,11 +17,11 @@ int	main(void)
 		else if (input == "EXIT")
 			break ;
 		else if (input == "ADD")
-			PhoneBook.AddContact();
+			phoneBook.AddContact();
 		else if (input == "SEARCH")
 		{
-			PhoneBook.DisplayAllContacts();
-			PhoneBook.DisplayOneContact();
+			phoneBook.DisplayAllContacts();
+			phoneBook.DisplayOneContact();
 		}
 		else
 			std::cout << "Error : Wrong input!" << std::endl;
