@@ -1,12 +1,10 @@
-NAME			= Zombie
+NAME			= Karen
 
 CC				= clang++
 CFLAGS			= -Wall -Werror -Wextra -std=c++98
 
 SRCS			= main.cpp \
-					Zombie.cpp \
-					newZombie.cpp \
-					randomChump.cpp
+					Karen.cpp
 
 OBJS			= $(SRCS:.cpp=.o)
 
