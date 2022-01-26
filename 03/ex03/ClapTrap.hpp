@@ -14,7 +14,7 @@ class ClapTrap
 		ClapTrap(void); // default constructor
 		ClapTrap(std::string name);
 		ClapTrap(const ClapTrap& ref); // copy constructor
-		~ClapTrap(void); // destructor
+		virtual ~ClapTrap(void); // destructor
 		ClapTrap&		operator=(const ClapTrap& ref); // assignation operator
 
 		void			setName(std::string name);
