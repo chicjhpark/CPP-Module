@@ -59,5 +59,5 @@ Fixed::~Fixed(void)
 std::ostream&	operator<<(std::ostream& outStream, const Fixed& fixed)
 {
 	outStream << fixed.toFloat();
-	return outStream;
+	return outStream; // outStream을 반환해야 그 후에도 계속 쓸 수 있다.
 }
