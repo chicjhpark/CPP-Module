@@ -2,7 +2,6 @@
 #define __KAREN_HPP__
 
 #include <iostream>
-#include <algorithm> // std::find
 #include <vector>
 
 class Karen
