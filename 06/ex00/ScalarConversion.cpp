@@ -62,7 +62,6 @@ void	ScalarConversion::convertInt(void)
 	{
 		std::cerr << e.what() << std::endl;
 	}
-
 }
 
 void	ScalarConversion::convertFloat(void)
